@@ -24,10 +24,22 @@ while (number <= 100) {
 }
 
 // Problem 3 chessboard
+/* this problem took a little bit of help from stack overflow for me to figure out how to get the new lines to work
+but it seems to be working now */
 
-let gridSize = 8;
-while (gridSize <= gridSize * gridSize) {
-height = gridSize;
-width = gridSize;
+const height = 8;
+const width = 8;
+let chessboard = '';
 
+for (let row = 0; row < height; row++) {
+  for (let col = 0; col < width; col++) {
+    if ((row + col) % 2 === 0) {
+      chessboard += ' ';
+    } else {
+      chessboard += '#';
+    }
+  }
+  chessboard += '\n';
 }
+
+console.log(chessboard);
