@@ -56,9 +56,9 @@ function everySome(array, predicateFN) {
   return !array.some((element) => !predicateFN(element));
 }
 
-let numbers = [1, 2, 3, 4, 5];
-let allEven = everySome(numbers, (num) => num % 2 === 0);
-console.log(allEven);
+let numbers2 = [1, 2, 3, 4, 5];
+let allEven2 = everySome(numbers, (num) => num % 2 === 0);
+console.log(allEven2);
 
 /*
 In this version, we use the some method to check if there is an element in the array for which the predicate 
