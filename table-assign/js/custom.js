@@ -35,3 +35,20 @@
  ]
 
  // complete with code to select and populate the table
+
+ const listDiv = document.querySelector("#bhangra-artists");
+
+let contents = "<table border='1'>";
+contents += "<tr><th>Name</th><th>Year of Birth</th><th>Popular Song</th></tr>";
+
+artists.forEach(function (artist) {
+  contents += "<tr>";
+  contents += `<td>${artist.name}</td>`;
+  contents += `<td>${artist.birthYear}</td>`;
+  contents += `<td><a href="${artist.link}" target="_blank">${artist.name}'s Popular Song</a></td>`;
+  contents += "</tr>";
+});
+
+contents += "</table>";
+
+listDiv.innerHTML = contents;

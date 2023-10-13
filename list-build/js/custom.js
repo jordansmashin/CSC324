@@ -32,16 +32,6 @@
     link: "https://www.youtube.com/watch?v=O95-w2gACuA"
   }
  ]
-
- 
- // this will hold the names:
- let names = [];
-
-// push the names into names:
-
- artists.forEach(function(artist) {
-   names.push(artist.name);
- });
  
  // grab the currently-empty div:
 const listDiv = document.querySelector("#bhangra-artists");
